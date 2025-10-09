@@ -112,11 +112,12 @@ html, body { margin:0 !important; padding:0 !important; background:#fff !importa
 .copy h1 {
   font-weight:400; font-size:clamp(26px,3.2vw,38px);
   line-height:1.14; letter-spacing:-.01em;
-  /* einzige neue Anpassung: mehr Abstand nach unten */
-  margin: 0 0 40px;
+  /* mehr Abstand unter der Headline */
+  margin: 0 0 22px;
 }
 .copy .lead { margin:0 0 6px; color:var(--muted); font-weight:500; letter-spacing:.005em; }
-.copy ul { list-style:none; padding:0; margin:10px 0 18px; }
+/* Einzige neue Änderung: mehr Abstand zur CTA-Gruppe */
+.copy ul { list-style:none; padding:0; margin:10px 0 28px; }
 .copy li { position:relative; padding-left:26px; margin:6px 0; color:#fff; font-size:16px; }
 .copy li::before { content:"✓"; position:absolute; left:0; top:0; line-height:1; color:#28e1ae; font-weight:700; transform:translateY(2px); }
 
@@ -238,5 +239,4 @@ html, body { margin:0 !important; padding:0 !important; background:#fff !importa
   });
 })();
 </script>
-
 
