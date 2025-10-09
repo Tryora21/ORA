@@ -58,6 +58,9 @@
 </div>
 
 <style>
+/* Einzige Ergänzung, um grauen Seitenhintergrund/Rand zu eliminieren */
+html, body { margin:0 !important; padding:0 !important; background:#fff !important; }
+
 :root {
   --font:"Lexend",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   --teal:#143b34; --green:#00b67a; --salmon:#fb6f50;
@@ -163,7 +166,7 @@
       linear-gradient(to top, rgba(20,59,52,.50) 0%, rgba(20,59,52,.28) 36%, rgba(20,59,52,0) 66%),
       url("https://assets.prd.heyflow.com/users/HNz0H1gcjsZMtuvuh7JXhCuqRqJ3/d0011a7e-347d-4583-a333-45baa5426c43/original.jpeg")
       center/cover no-repeat;
-    /* einzig neue Zeile: Fokus leicht nach links verlagern */
+    /* Fokus leicht nach links verlagern (von dir so gewünscht) */
     background-position: 62% center;
     padding: clamp(12px, 3.5vw, 22px);
   }
