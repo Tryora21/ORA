@@ -34,16 +34,20 @@
     <div class="logo-grid">
       <img src="https://cdn.shopify.com/s/files/1/0896/3735/5844/files/Arzteblatt.jpg?v=1759939950" alt="Business Insider">
       <img src="https://cdn.shopify.com/s/files/1/0896/3735/5844/files/DieZeit_svg_png.jpg?v=1759940079" alt="Healthline">
-      <img src="https://cdn.shopify.com/s/files/1/0896/3735/5844/files/Apothekenumschau_svg_png.jpg?v=1759740837">
-      <img src="https://cdn.shopify.com/s/files/1/0896/3735/5844/files/Spiegel_svg_png.jpg?v=1759939956" alt="Women’s Health">
+      <img src="https://cdn.shopify.com/s/files/1/0896/3735/5844/files/Apothekenumschau_svg_png.jpg?v=1759740837" alt="Apotheken Umschau">
+      <img src="https://cdn.shopify.com/s/files/1/0896/3735/5844/files/Spiegel_svg_png.jpg?v=1759939956" alt="Der Spiegel">
     </div>
   </div>
 
   <div class="footer">
     <div class="footer-links">
-      <a href="https://www.tryora.de/pages/impressum-3" target="_top" rel="noopener">Impressum</a
+      <a href="https://www.tryora.de/pages/impressum-3" target="_top" rel="noopener">Impressum</a>
+      <a href="#" aria-disabled="true">Fälschungen</a>
       <a href="https://www.tryora.de/pages/wissenschaft" target="_top" rel="noopener">Wissenschaft</a>
       <a href="https://www.tryora.de/pages/datenschutzerklarung" target="_top" rel="noopener">Datenschutzerklärung</a>
+      <a href="#" aria-disabled="true">AGB</a>
+      <a href="#" aria-disabled="true">FAQ</a>
+      <a href="#" aria-disabled="true">Bewertungen</a>
       <a href="https://www.tryora.de/pages/contact" target="_top" rel="noopener">Kontakt</a>
     </div>
     <div class="footer-note">
@@ -54,7 +58,7 @@
 </div>
 
 <style>
-/* Einzige Ergänzung, um grauen Seitenhintergrund/Rand zu eliminieren */
+/* Entfernt grauen Seitenhintergrund/Rand */
 html, body { margin:0 !important; padding:0 !important; background:#fff !important; }
 
 :root {
@@ -100,7 +104,10 @@ html, body { margin:0 !important; padding:0 !important; background:#fff !importa
   padding-left: clamp(22px, 8vw, 120px);
 }
 .hero-right { min-height:0; }
-.brand { font-weight:700; letter-spacing:.08em; opacity:.9; }
+
+/* Einzige Änderung: Brand größer */
+.brand { font-weight:700; letter-spacing:.08em; opacity:.9; font-size: clamp(22px, 3.2vw, 32px); }
+
 .copy { align-self:center; max-width:560px; }
 .copy h1 {
   font-weight:400; font-size:clamp(26px,3.2vw,38px);
@@ -162,8 +169,7 @@ html, body { margin:0 !important; padding:0 !important; background:#fff !importa
       linear-gradient(to top, rgba(20,59,52,.50) 0%, rgba(20,59,52,.28) 36%, rgba(20,59,52,0) 66%),
       url("https://assets.prd.heyflow.com/users/HNz0H1gcjsZMtuvuh7JXhCuqRqJ3/d0011a7e-347d-4583-a333-45baa5426c43/original.jpeg")
       center/cover no-repeat;
-    /* Fokus leicht nach links verlagern (von dir so gewünscht) */
-    background-position: 62% center;
+    background-position: 62% center; /* Fokus leicht nach links (wie gewünscht) */
     padding: clamp(12px, 3.5vw, 22px);
   }
   .hero-left { padding-left: clamp(12px, 4vw, 28px); }
@@ -230,3 +236,4 @@ html, body { margin:0 !important; padding:0 !important; background:#fff !importa
   });
 })();
 </script>
+
