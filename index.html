@@ -105,13 +105,15 @@ html, body { margin:0 !important; padding:0 !important; background:#fff !importa
 }
 .hero-right { min-height:0; }
 
-/* Einzige Änderung: Brand größer */
+/* Brand größer (aus vorherigem Schritt) */
 .brand { font-weight:700; letter-spacing:.08em; opacity:.9; font-size: clamp(22px, 3.2vw, 32px); }
 
 .copy { align-self:center; max-width:560px; }
 .copy h1 {
   font-weight:400; font-size:clamp(26px,3.2vw,38px);
-  line-height:1.14; letter-spacing:-.01em; margin:0 0 10px;
+  line-height:1.14; letter-spacing:-.01em;
+  /* einzige neue Anpassung: mehr Abstand nach unten */
+  margin: 0 0 22px;
 }
 .copy .lead { margin:0 0 6px; color:var(--muted); font-weight:500; letter-spacing:.005em; }
 .copy ul { list-style:none; padding:0; margin:10px 0 18px; }
@@ -236,4 +238,5 @@ html, body { margin:0 !important; padding:0 !important; background:#fff !importa
   });
 })();
 </script>
+
 
